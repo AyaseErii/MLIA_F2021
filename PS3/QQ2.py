@@ -116,13 +116,6 @@ X_test = pd.read_csv('testX.csv', header=None)
 Y_test = pd.read_csv('testY.csv', header=None)
 
 
-#X_train = pd.read_csv('D:\\OneDrive - University of Virginia\\Courses\\ECE6501 Machine Learning in Image Analysis (Miaomiao Zhang)\\PS2\\PS2_Q2_mnist_for_python\\mnist for python\\trainX.csv', header=None)
-#Y_train = pd.read_csv('D:\\OneDrive - University of Virginia\\Courses\\ECE6501 Machine Learning in Image Analysis (Miaomiao Zhang)\\PS2\\PS2_Q2_mnist_for_python\\mnist for python\\trainY.csv', header=None)
-
-#X_test = pd.read_csv('D:\\OneDrive - University of Virginia\\Courses\\ECE6501 Machine Learning in Image Analysis (Miaomiao Zhang)\\PS2\\PS2_Q2_mnist_for_python\\mnist for python\\testX.csv', header=None)
-#Y_test = pd.read_csv('D:\\OneDrive - University of Virginia\\Courses\\ECE6501 Machine Learning in Image Analysis (Miaomiao Zhang)\\PS2\\PS2_Q2_mnist_for_python\\mnist for python\\testY.csv', header=None)
-
-
 X_train_0_1s, Y_train_0_1s, total_train_0s, total_train_1s = pick_two_specific_digits(X_train,Y_train,0,1) # pick 0s and 1s only
 
 X_test_0_1s, Y_test_0_1s, total_test_0s, total_test_1s = pick_two_specific_digits(X_test,Y_test,0,1) # pick 0s and 1s only
