@@ -54,7 +54,7 @@ def l2_norm(x):
 
 
 def main_func():
-    img = io.imread('E:\\OneDrive - University of Virginia\\Courses\\ECE6501 Machine Learning in Image Analysis (Miaomiao Zhang)\\PS1\\PS1\\cameraman.png',0)
+    img = io.imread('cameraman.png',0)
     img_noisy = Gaussian_noise(img, 0.1)
     orig_img = img.copy()        
 
