@@ -115,11 +115,11 @@ def Euler_vt(velocity,h):
 # Read v
 '''Put v0Spatial.mhd and .raw and source.mhd and .raw into the same fold'''
 #velocity = sitk.GetArrayFromImage(sitk.ReadImage('v0Spatial.mhd')) 
-velocity = sitk.GetArrayFromImage(sitk.ReadImage('D:\\OneDrive - University of Virginia\\Courses\\ECE6501 Machine Learning in Image Analysis (Miaomiao Zhang)\\PS2\\PS2\\code+data_Q3\\data\\initialV\\v0Spatial.mhd')) 
+velocity = sitk.GetArrayFromImage(sitk.ReadImage('v0Spatial.mhd')) 
 # Read source img
 '''Put v0Spatial.mhd and .raw and source.mhd .raw into the same fold'''
-#source= sitk.GetArrayFromImage(sitk.ReadImage(source.mhd')) 
-source= sitk.GetArrayFromImage(sitk.ReadImage('D:\\OneDrive - University of Virginia\\Courses\\ECE6501 Machine Learning in Image Analysis (Miaomiao Zhang)\\PS2\\PS2\\code+data_Q3\\data\\sourceImage\\source.mhd')) 
+#source= sitk.GetArrayFromImage(sitk.ReadImage('source.mhd')) 
+source= sitk.GetArrayFromImage(sitk.ReadImage('source.mhd')) 
 
 source = np.reshape(source,(100,100))
 t, px, py, p = Euler_vt(velocity,h=0.02)
