@@ -38,7 +38,7 @@ def PCA_func(D):
     return s_eigval, cum_var, s_eigvec
 
 
-D = pd.read_csv('D:\\OneDrive - University of Virginia\\Courses\\ECE6501 Machine Learning in Image Analysis (Miaomiao Zhang)\\PS2\\PS2_Q2_mnist_for_python\\mnist for python\\trainX.csv', header=None)
+D = pd.read_csv('trainX.csv', header=None)
 
 
 evalue, cumsum, s_evec = PCA_func(D)
